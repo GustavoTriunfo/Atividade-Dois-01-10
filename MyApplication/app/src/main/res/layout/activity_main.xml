@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/mapa"
+        android:layout_width="639dp"
+        android:layout_height="1087dp"
+        android:layout_marginStart="-130dp"
+        android:layout_marginTop="-120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mapasorocaba" />
+
+    <ImageView
+        android:id="@+id/logoAudi"
+        android:layout_width="81dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="424dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/audi_icon" />
+
+    <ImageView
+        android:id="@+id/logoVolvo"
+        android:layout_width="64dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="72dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/volvo_icon" />
+
+    <ImageView
+        android:id="@+id/jaguarLogo"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="-354dp"
+        android:layout_marginTop="-770dp"
+        android:clickable="true"
+        app:layout_constraintStart_toEndOf="@+id/mapa"
+        app:layout_constraintTop_toBottomOf="@+id/mapa"
+        app:srcCompat="@drawable/jaguar_icon" />
+
+    <Button
+        android:id="@+id/botaoAudi"
+        android:layout_width="121dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="-20dp"
+        android:text="Saiba mais"
+        android:textColorLink="#4CAF50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoAudi" />
+
+    <Button
+        android:id="@+id/botaoJaguar"
+        android:layout_width="123dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="-10dp"
+        android:text="Saiba mais"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jaguarLogo" />
+
+    <Button
+        android:id="@+id/botaoVolvo"
+        android:layout_width="118dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="-5dp"
+        android:text="Saiba mais"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoVolvo" />
+
+    <TextView
+        android:id="@+id/textoAudi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="-20dp"
+        android:text="Audi Center Sorocaba"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/logoAudi"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textoJaguar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="-10dp"
+        android:text="Maggi Jaguar"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/jaguarLogo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textoVolvo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:text="Maggi Volvo"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/logoVolvo"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
